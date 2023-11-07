@@ -3,7 +3,9 @@ name: GitHub Pages deploy
 on:
   push:
     branches: [master]
-
+permissions:
+  contents: write
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,6 +27,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_AUTH }}
           BRANCH: public # The branch the action should deploy to.
           FOLDER: out # The folder the action should deploy.
