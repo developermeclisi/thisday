@@ -1,1 +1,1 @@
-Bu Branch Harakles'e aittir
+Tüm projeyi TypeScript'e TSX uzantılı dosya desteği ile tekrardan confügre ettim. Herşey TypeScript ile sorunsuz çalışıyor. **code-valor**
